@@ -6,8 +6,8 @@ An end-to-end Machine Learning project that predicts whether a customer is likel
 
 ## 🚀 Live Demo
 
-🔗 [Click here to use the app](#)
-*(Add your Streamlit deployed link here)*
+🔗 https://customer-churn-prediction-mn9jgcrrsgawbitrkswb3x.streamlit.app/
+
 
 ---
 
