@@ -59,9 +59,9 @@ def set_bg(image_file):
     """, unsafe_allow_html=True)
 
 # ---------- LOAD MODEL ----------
-with open("Customer_churn_model.pkl", "rb") as f:
-    model_data = pickle.load(f)
-
+with st.spinner("Loading model... please wait ⏳"):
+    with open("Customer_churn_model.pkl", "rb") as f:
+        model_data = pickle.load(f)
 loaded_model = model_data["model"]
 feature_names = model_data["features_names"]
 
