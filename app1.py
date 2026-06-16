@@ -55,6 +55,26 @@ def set_bg(image_file):
     h1, h2, h3, h4, h5, h6, p, label, div {{
         color: white !important;
     }}
+    def set_bg(image_file):
+    with open(image_file, "rb") as f:
+        img = base64.b64encode(f.read()).decode()
+    st.markdown(
+        f
+        /* Ye naya CSS daal - Selectbox, Number input ka text black */
+        label, .stSelectbox label, .stNumberInput label {{
+            color: black !important;
+            font-weight: 600;
+        }}
+        
+        /* Dropdown ke options ka text black */
+        .stSelectbox div[data-baseweb="select"] * {{
+            color: black !important;
+        }}
+        
+        /* Input box me likha hua text black */
+        .stNumberInput input {{
+            color: black !important;
+        }}
     </style>
     """, unsafe_allow_html=True)
 
